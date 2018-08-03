@@ -1,0 +1,12 @@
+package lab02.domain;
+
+import java.time.LocalDate;
+
+public class Lecturer extends Staff {
+	private String school;
+    private char academic_level;
+    
+    public Lecturer(String firstname, String lastname, float salary, LocalDate hireDate, String school, char academic_level) {
+	
+	}
+}

@@ -1,0 +1,59 @@
+package lab02.domain;
+import java.text.NumberFormat;
+import java.time.LocalDate;
+/*
+ * @author Aarthi
+ * A class to store details about staff
+ */
+public class Staff {
+	private String firstname;
+	private String lastname;
+	private float salary;
+	private LocalDate hireDate;
+	private LocalDate endDate;
+	static int staffId;
+	
+	public Staff(String firstname, String lastname, float salary, LocalDate hireDate) {
+		this.setFirstname(firstname);
+		this.setLastname(lastname);
+		this.salary = salary;
+		this.setHireDate(hireDate);
+		staffId++;
+	}
+	
+	public int getStaffCount() {
+		return staffId;
+	}
+	
+	public float raiseSalary(float percentage) {
+		return salary*percentage;
+		
+	}
+
+	public String getFirstname() {
+		return firstname;
+	}
+
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
+	}
+
+	public String getLastname() {
+		return lastname;
+	}
+
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
+	}
+
+	public LocalDate getHireDate() {
+		return hireDate;
+	}
+
+	public void setHireDate(LocalDate hireDate) {
+		this.hireDate = hireDate;
+	}
+	
+	
+	
+}
